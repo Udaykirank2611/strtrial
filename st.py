@@ -31,7 +31,7 @@ caa = st.selectbox("number of major vessels:",['0','1','2','3'])
 
 if st.button('Heart Disease Test Result'):
 
-    user_input = [age,trestbps,chol,thalach, oldpeak, slope,caa, thall,thalach, oldpeak, slope,caa, thall]
+    user_input = [age,trestbps,chol,thalach, oldpeak, slope,caa, thall,thalach, chestpain, slope,caa, gender]
 
     user_input = [float(x) for x in user_input]
 
