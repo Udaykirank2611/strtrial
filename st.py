@@ -10,7 +10,13 @@ st.title("Heart Attack Precdictor")
 age = st.text_input("Enter Your age", "0")
 gender = st.selectbox("Gender: ",
                      ['Male', 'Female'])
-chestpain = st.selectbox("Chest pain type:",["0 = Typical Angina","1 = Atypical Angina","2 = Non-anginal Pain","3 = Asymptomatic"])
+if gender == 'Male':
+    gender = 0
+else:
+    gender = 1
+chp = {"Typical Angina":0,"Atypical Angina":1,"Non-anginal Pain":2,"Asymptomatic":3}
+chestpain = st.selectbox("Chest pain type:",["Typical Angina","Atypical Angina","Non-anginal Pain","Asymptomatic"])
+chestpain = chp{chestpain}
 trestbps = st.text_input("Enter your Resting blood pressure (in mm Hg)","0")
 chol = st.text_input("Enter your  Cholestoral in mg/dl fetched via BMI sensor","0")
 fbs = st.selectbox("fasting blood sugar:",['1 = True','0 = False'])
