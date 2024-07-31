@@ -16,7 +16,7 @@ else:
     gender = 1
 chp = {"Typical Angina":0,"Atypical Angina":1,"Non-anginal Pain":2,"Asymptomatic":3}
 chestpain = st.selectbox("Chest pain type:",["Typical Angina","Atypical Angina","Non-anginal Pain","Asymptomatic"])
-chestpain = chp{chestpain}
+chestpain = chp[chestpain]
 trestbps = st.text_input("Enter your Resting blood pressure (in mm Hg)","0")
 chol = st.text_input("Enter your  Cholestoral in mg/dl fetched via BMI sensor","0")
 fbs = st.selectbox("fasting blood sugar:",['1 = True','0 = False'])
